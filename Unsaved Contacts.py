@@ -9,8 +9,8 @@ driver = webdriver.Chrome()
 driver.get("https://web.whatsapp.com")
 time.sleep(3)
 input("If logged in press Enter")
-numbers = [919424848553, 919424848553]
-message = "Hello this is a test message"
+numbers = [123456789, 987654321] # Replace this numbers by the numbers you want to send message to sepereated by (,)
+message = "Hello this is a test message" # Replace this by the message you want to send
 for i in range(len(numbers)):
     driver.get("https://web.whatsapp.com/send?phone={}&text={}".format(numbers[i],message))
     time.sleep(8)
